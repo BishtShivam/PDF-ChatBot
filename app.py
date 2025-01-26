@@ -25,6 +25,7 @@ embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 # set up Streamlit app
 st.title("Conversational Chat with PDF upload")
 st.write("Upload pdf's and chat their content")
+st.secrets["HF_TOKEN"]
 
 #Input GROQ API key
 api_key=st.text_input("Entere your GROQ API key:",type="password")
